@@ -40,6 +40,7 @@ body{
 .table-boleto td {
     border-left: 1px solid #000;
     border-top: 1px solid #000;
+    vertical-align: top;
 }
 
 .table-boleto td:last-child {
@@ -61,7 +62,7 @@ body{
 
 .table-boleto .conteudo {
     font: bold 10px Arial;
-    height: 13px;
+    min-height: 13px;
 }
 
 .table-boleto .sacador {
