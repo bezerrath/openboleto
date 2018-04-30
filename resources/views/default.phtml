@@ -137,8 +137,14 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <span class="conteudo"></span>
                             <span class="titulo">Demonstrativo</span>
+                            <span class="conteudo">
+                                <?php echo $demonstrativo[0] ?><br>
+                                <?php echo $demonstrativo[1] ?><br>
+                                <?php echo $demonstrativo[2] ?><br>
+                                <?php echo $demonstrativo[3] ?><br>
+                                <?php echo $demonstrativo[4] ?><br>
+                            </span>
                         </td>
                         <td>
                             <span class="titulo">(-) Outras deduções</span><br>
@@ -154,20 +160,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="4"><span style="margin-top: 10px" class="conteudo"><?php echo $demonstrativo[0] ?></span></td>
                         <td class="noleftborder"><span class="titulo">Autenticação mecânica</span></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="notopborder"><span class="conteudo"><?php echo $demonstrativo[1] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="notopborder"><span class="conteudo"><?php echo $demonstrativo[2] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="notopborder"><span class="conteudo"><?php echo $demonstrativo[3] ?></span></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="notopborder bottomborder"><span style="margin-bottom: 10px;" class="conteudo"><?php echo $demonstrativo[4] ?></span></td>
+                        <td colspan="4"><span style="margin-top: 10px" class="conteudo"><?php echo $detalhamento;?></span></td>
                     </tr>
                 </tbody>
             </table>

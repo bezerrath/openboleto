@@ -274,6 +274,8 @@ abstract class BoletoAbstract
      * @var string
      */
     protected $logoBanco;
+    
+    protected $detalhamento;
 
     /**
      * Construtor
@@ -1223,6 +1225,7 @@ abstract class BoletoAbstract
             'uso_banco' => $this->getUsoBanco(),
             'codigo_barras' => $this->getImagemCodigoDeBarras(),
             'resource_path' => $this->getResourcePath(),
+            'detalhamento' => $this->getDetalhamento(),
         ));
 
         // Override view variables when rendering
@@ -1583,5 +1586,10 @@ abstract class BoletoAbstract
             $result['digito'] = 0;
         }
         return $result;
+    }
+    
+    public function setDetalhamento($detalhamento){
+        $this->detalhamento = $detalhamento;
+        return $this;
     }
 }
