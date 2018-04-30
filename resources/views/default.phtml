@@ -137,13 +137,13 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <span class="titulo">Demonstrativo</span>
+                            <span class="titulo">Demonstrativo</span><br>
                             <span class="conteudo">
                                 <?php echo $demonstrativo[0] ?><br>
-                                <?php echo $demonstrativo[1] ?><br>
-                                <?php echo $demonstrativo[2] ?><br>
-                                <?php echo $demonstrativo[3] ?><br>
-                                <?php echo $demonstrativo[4] ?><br>
+                                <?php echo ($demonstrativo[1])?'<br>':'';?><?php echo $demonstrativo[1] ?><br>
+                                <?php echo ($demonstrativo[2])?'<br>':'';?><?php echo $demonstrativo[2] ?><br>
+                                <?php echo ($demonstrativo[3])?'<br>':'';?><?php echo $demonstrativo[3] ?><br>
+                                <?php echo ($demonstrativo[4])?'<br>':'';?><?php echo $demonstrativo[4] ?><br>
                             </span>
                         </td>
                         <td>
@@ -160,8 +160,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="noleftborder"><span class="titulo">Autenticação mecânica</span></td>
-                        <td colspan="4"><span style="margin-top: 10px" class="conteudo"><?php echo $detalhamento;?></span></td>
+                        <td colspan="5" class="bottomborder">
+                            <span class="titulo">Detalhamento</span><br>
+                            <span class="conteudo"><?php echo $detalhamento;?></span>
+                        </td>
                     </tr>
                 </tbody>
             </table>
