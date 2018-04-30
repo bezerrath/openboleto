@@ -888,6 +888,10 @@ abstract class BoletoAbstract
     {
         return $this->outrasDeducoes;
     }
+    
+    public function getDetalhamento(){
+        return $this->detalhamento;
+    }
 
     /**
      * Define o campo outros acréscimos do boleto
