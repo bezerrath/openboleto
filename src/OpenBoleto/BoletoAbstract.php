@@ -249,7 +249,7 @@ abstract class BoletoAbstract
      * Array com as linhas de instruções
      * @var array
      */
-    protected $instrucoes = array('Pagar até a data do vencimento.');
+    protected $instrucoes = array();
 
     /**
      * Nome do arquivo de template a ser usado
